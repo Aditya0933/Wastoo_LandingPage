@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wastoo Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sec-padding-lr pt-4 pb-2">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./IMG/wastoologo.svg" alt="Brand Logo" class="logo-img-main">
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"
+                id="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links (Desktop) -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link" href="#" role="button">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">App Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            IoT Devices
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Smart Lock</a></li>
+                            <li><a class="dropdown-item" href="#">Home security</a></li>
+                            <li><a class="dropdown-item" href="#">Smart Refrigerator</a></li>
+                            <li><a class="dropdown-item" href="#">Air quality monitors</a></li>
+                            <li><a class="dropdown-item" href="#">Smart TV</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Industrys
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">AI</a></li>
+                            <li><a class="dropdown-item" href="#">Cybersecurity</a></li>
+                            <li><a class="dropdown-item" href="#">Cloud Computing</a></li>
+                            <li><a class="dropdown-item" href="#">Data Analytics</a></li>
+                            <li><a class="dropdown-item" href="#">Blockchain</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link" href="#" role="button">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Button -->
+            <div class="contact-btn-header">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Contact Us</span>
+                    <i class="bi bi-arrow-up-right" style="margin-left: 4px;"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Links (Mobile) -->
+    <div class="side-nav" id="sideNav">
+        <button class="close-btn" id="close-btn"><i class="bi bi-x-lg"></i></button>
+        <!-- Close Button -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" role="button">About Us</a>
+            </li>
+            <li class="nav-item expandable">
+                <a class="nav-link" href="#" role="button">Services</a>
+                <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                    <li><a class="dropdown-item" href="#">App Development</a></li>
+                </ul>
+            </li>
+            <li class="nav-item expandable">
+                <a class="nav-link" href="#" role="button">IoT Devices</a>
+                <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="#">Smart Lock</a></li>
+                    <li><a class="dropdown-item" href="#">Home Security</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Refrigerator</a></li>
+                    <li><a class="dropdown-item" href="#">Air Quality Monitors</a></li>
+                    <li><a class="dropdown-item" href="#">Smart TV</a></li>
+                </ul>
+            </li>
+            <li class="nav-item expandable">
+                <a class="nav-link" href="#" role="button">Solutions</a>
+                <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="#">First Solutions</a></li>
+                    <li><a class="dropdown-item" href="#">Second Solutions</a></li>
+                    <li><a class="dropdown-item" href="#">Third Solutions</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid">
+        <!-- Hero Section -->
+        <div class="row hero-section d-flex align-items-center sec-padding-lr">
+            <h1 class="hero-text">AUTOMATE YOUR</h1>
+        </div>
+
+        <!-- Company Logos Container -->
+        <div class="row com-main-container shadow">
+            <div class="d-flex justify-content-start align-items-center overflow-auto">
+                <img src="./IMG/Google_2015_logo.svg" alt="Company 3" class="logo-img mx-3">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRMTJ61aWXE6q56WmH6fCNaWQk3QR7Z8TpB_mIEJktWR-kqQMzwKVeoBnBU0q_LLMf5jk&usqp=CAU"
+                    alt="Company 10" class="logo-img mx-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAC8nf1wt8KiTTdXYPSfNhdkMk3VTgsNxVabGwRrnuHfZ8vlYZtxkTZ7Z5fXnSpdCMwhU&usqp=CAU"
+                    alt="Company 10" class="logo-img mx-3">
+                <img src="./IMG/Apple_logo_black.svg" alt="Company 2" class="logo-img mx-3">
+                <img src="./IMG/Amazon_logo.svg" alt="Company 1" class="logo-img mx-3">
+                <img src="./IMG/IBM_logo.svg" alt="Company 4" class="logo-img mx-3">
+                <img src="https://assets.aboutamazon.com/4b/7f/4a4a80724a5e9a6b4a1931e8bf99/prime-logo-rgb-prime-blue-master.png"
+                    alt="Company 5" class="logo-img mx-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBoe8ZBvRF3NsjYS-B9OyXYchM9U22g8XYA&s"
+                    alt="Company 10" class="logo-img mx-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH_7zxZrvXYUS5gPxyHnJgFOTPviTSzKmkKdwwswyDe4DI5yXfhebPc1l0AyznasahEg&usqp=CAU"
+                    alt="Company 7" class="logo-img mx-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ogorD0Ub9g_9FuWywlrn2Hnn0ccldxi0P-eZycvQMFJsAIrYg3rHGx-PsTP16Apn5Ho&usqp=CAU"
+                    alt="Company 8" class="logo-img mx-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZKQVjmVVWjXnijAdCz8xfugxi5NnPW1OhA&s"
+                    alt="Company 6" class="logo-img mx-3">
+                <img src="./IMG/slack.webp" alt="Company 9" class="logo-img mx-3">
+            </div>
+
+        </div>
+
+        <!-- About Section -->
+        <div class="about-main-sec row sec-padding-lr sec-padding-tb align-items-center">
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+                <h3 class="sub-heading">About Watsoo</h3>
+                <h1 class="main-heading">Inventive IoT, Telematics, and FinTech Solutions</h1>
+                <p class="para-about-heading">
+                    Watsoo is India's leading technology company specializing in IoT device manufacturing,
+                    telematics,
+                    FinTech, and custom development solutions. In just seven years, we have achieved CMMI 5 and
+                    ISO
+                    certifications and delivered quality services to government and Fortune 500 companies.
+                </p>
+
+                <!-- Stats Section -->
+                <div class="row text-center">
+                    <!-- Total Projects Div -->
+                    <div class="col-4 mb-3">
+                        <div>
+                            <div class="count-number">
+                                <h2 class="fw-semibold fs-1">1K +</h2>
+                            </div>
+                            <span class="fw-medium project-span" style="font-size: 14px;">Expert Team</span>
+                        </div>
+                    </div>
+
+                    <!-- Completed Projects Div -->
+                    <div class="col-4 mb-3">
+                        <div>
+                            <div class="count-number">
+                                <h2 class="fw-semibold fs-1">100 +</h2>
+                            </div>
+                            <span class="fw-medium project-span" style="font-size: 14px;">Projects Done</span>
+                        </div>
+                    </div>
+
+                    <!-- Ongoing Projects Div -->
+                    <div class="col-4 mb-3">
+                        <div>
+                            <div class="count-number">
+                                <h2 class="fw-semibold fs-1">99 %</h2>
+                            </div>
+                            <span class="fw-medium project-span" style="font-size: 14px;">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="contact-btn-header mt-3">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>More About Us</span>
+                        <i class="bi bi-arrow-up-right" style="margin-left: 4px;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-7 d-flex mx-auto align-items-stretch" style="padding: 0;">
+                <div style="flex: 0 0 60%; max-width: 60%; padding-right: 10px;">
+                    <img src="./IMG/building_img.jpg" alt="Main Image" class="img-fluid rounded w-100 h-100"
+                        style="object-fit: cover;">
+                </div>
+                <!-- First Smaller Image: 20% Width -->
+                <div style="flex: 0 0 20%; max-width: 20%; padding-right: 10px;">
+                    <img src="./IMG/building_img.jpg" alt="Side Image 1" class="img-fluid rounded w-100 h-100"
+                        style="object-fit: cover;">
+                </div>
+                <!-- Second Smaller Image: 20% Width -->
+                <div style="flex: 0 0 20%; max-width: 20%;">
+                    <img src="./IMG/building_img.jpg" alt="Side Image 2" class="img-fluid rounded w-100 h-100"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Devices Scroller Container -->
+        <div class="row devices-main-sec sec-padding-lr sec-padding-tb">
+            <div>
+                <h3 class="sub-heading">IoT Devices</h3>
+                <h1 class="main-heading">Explore Our IoT Devices</h1>
+                <p class="para-about-heading">An in-house team that develops robust IoT-powered devices.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div id="card-carousel" class="carousel slide" data-bs-ride="carousel" style="padding: 0;">
+                        <!-- Carousel Inner with one slide containing multiple cards -->
+                        <!-- Carousel -->
+                        <div class="slider-container">
+                            <!-- Left Button -->
+                            <button class="slider-left-btn" id="scrollLeftSlider"><i
+                                    class="bi bi-chevron-left"></i></button>
+
+                            <!-- Slider Cards -->
+                            <div class="slider-cards-container" id="sliderScrollContainer">
+                                <div class="slider-card">
+                                    <img src="https://5.imimg.com/data5/ND/IH/LE/SELLER-48441090/panic-button.jpg"
+                                        alt="Panic Button">
+                                    <h5>Panic Button</h5>
+                                    <p>Guard your fleets by integrating SOS, panic buttons, and an emergency alert
+                                        system.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                                <div class="slider-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQg3zgp1Gm4KewrGeWpNUJ8MZtFi6N7_fBfA&s"
+                                        alt="GPS Device">
+                                    <h5>Prithvi AIS-140 GPS</h5>
+                                    <p>A government-approved GPS device allows you to comply with fleet regulations.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                                <div class="slider-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTt8YLagMduDXAn3NgK-qmGicWfHBWnt_Yw&s"
+                                        alt="Custom GPS">
+                                    <h5>Custom GPS Trackers</h5>
+                                    <p>Tell your requirements and get personalized GPS trackers for vehicles and assets.
+                                    </p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                                <div class="slider-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgH5VB8OqUHmZp_dsLzkftjMN2Imy33nKhA&s"
+                                        alt="Fuel Sensor">
+                                    <h5>Fuel Sensor</h5>
+                                    <p>Invest in IoT-enabled fuel sensors to find where you can optimize its
+                                        consumption.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                                <div class="slider-card">
+                                    <img src="https://5.imimg.com/data5/ND/IH/LE/SELLER-48441090/panic-button.jpg"
+                                        alt="Panic Button">
+                                    <h5>Panic Button</h5>
+                                    <p>Guard your fleets by integrating SOS, panic buttons, and an emergency alert
+                                        system.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                                <div class="slider-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQg3zgp1Gm4KewrGeWpNUJ8MZtFi6N7_fBfA&s"
+                                        alt="GPS Device">
+                                    <h5>Prithvi AIS-140 GPS</h5>
+                                    <p>A government-approved GPS device allows you to comply with fleet regulations.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                                <div class="slider-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTt8YLagMduDXAn3NgK-qmGicWfHBWnt_Yw&s"
+                                        alt="Custom GPS">
+                                    <h5>Custom GPS Trackers</h5>
+                                    <p>Tell your requirements and get personalized GPS trackers for vehicles and assets.
+                                    </p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                                <div class="slider-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgH5VB8OqUHmZp_dsLzkftjMN2Imy33nKhA&s"
+                                        alt="Fuel Sensor">
+                                    <h5>Fuel Sensor</h5>
+                                    <p>Invest in IoT-enabled fuel sensors to find where you can optimize its
+                                        consumption.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+
+                            <!-- Right Button -->
+                            <button class="slider-right-btn" id="scrollRightSlider"><i
+                                    class="bi bi-chevron-right"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explore Fintech TI Section -->
+        <div class="row explore-iot-sec sec-padding-lr sec-padding-tb">
+            <div class="col-md-6">
+                <h3 class="sub-heading explore-iot-sec-sub-heading">Best FinTech Solution</h3>
+                <h1 class="main-heading explore-iot-sec-main-heading">Leading the Future of Connected Financial
+                    Technologies</h1>
+                <p class="para-about-heading explore-iot-sec-para-heading mb-0">The four core pillars of BFSI
+                    and NBFCs are security,
+                    efficiency,
+                    accuracy, and agility.</p>
+                <p class="para-about-heading explore-iot-sec-para-heading">
+                    Watsoo is the industry's leading provider of FinTech solutions powered by blockchain, Al and
+                    ML.</p>
+
+                <!-- Second container, below -->
+                <div class="container mt-4">
+                    <div class="row">
+                        <!-- Container 1 -->
+                        <div class=" mb-4">
+                            <div class="d-flex align-items-center">
+                                <!-- Icon div -->
+                                <div class="icon-container me-3 d-flex align-items-center justify-center-center">
+                                    <i class="bi bi-broadcast-pin" style="font-size: 2rem; color: #A3EA36;"></i>
+                                </div>
+
+                                <!-- Content div -->
+                                <div>
+                                    <h5 class="fw-bold mb-0">Blockchain-Based Solutions</h5>
+                                    <p class="mb-0" style="font-size: 16px;">Get transformative blockchain
+                                        solutions, from custom blockchain development to blockchain consulting.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Container 2 -->
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center">
+                                <!-- Icon div -->
+                                <div class="icon-container me-3">
+                                    <i class="bi bi-shop" style="font-size: 2rem; color: #A3EA36;"></i>
+                                </div>
+
+                                <!-- Content div -->
+                                <div>
+                                    <h5 class="fw-bold mb-0">CBDC Solutions</h5>
+                                    <p class="mb-0" style="font-size: 16px;">Building innovative CBDC platforms
+                                        with reconciliation engines and mobile wallet integration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-btn-header">
+                    <a href="#contact" class=" btn-primary btn">
+                        <span>Explore IoT Solutions</span>
+                        <i class="bi bi-arrow-up-right" style="margin-left: 4px;"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Right Side: Image -->
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="https://www.ecomstreet.com/wp-content/themes/ecom/images/FinTech-bns-imgs.png"
+                        alt="Image 1" class="img-fluid img-toggle" id="img1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Telematic solution Section -->
+        <div class="row telematic-sec sec-padding-lr sec-padding-tb"
+            style="background-image: url('https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1200&dpr=1'); background-size: cover; background-position: center;">
+            <div>
+                <h3 class="sub-heading">Telematics Solutions</h3>
+                <h1 class="main-heading">Explore Our Telematics Solutions</h1>
+                <p class="para-about-heading">Trusted choice of several government bodies and many private
+                    companies.</p>
+            </div>
+            <div class="container py-4">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="card bg-dark text-white position-relative"
+                            style="height: 200px; background-image: url('https://www.watsoo.com/img/logistics/img6.jpg'); background-size: cover; background-position: center;">
+                            <div class="telematic-sec-card-overlay"></div>
+                            <div class="position-absolute bottom-0 w-100 text-center pb-3">
+                                <h5 class="mb-2 fw-semibold">Highway Toll Management</h5>
+                                <div class="mx-auto telematic-sec-card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="card bg-dark text-white position-relative"
+                            style="height: 200px; background-image: url('https://www.watsoo.com/img/public-transport/img4.jpg'); background-size: cover; background-position: center;">
+                            <div class="telematic-sec-card-overlay"></div>
+                            <div class="position-absolute bottom-0 w-100 text-center pb-3">
+                                <h5 class="mb-2 fw-semibold">Traffic Management System</h5>
+                                <div class="mx-auto telematic-sec-card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="card bg-dark text-white position-relative"
+                            style="height: 200px; background-image: url('https://www.watsoo.com/img/ais-140-4g/ais-140-4g-gps-device.webp'); background-size: cover; background-position: center;">
+                            <div class="telematic-sec-card-overlay"></div>
+                            <div class="position-absolute bottom-0 w-100 text-center pb-3">
+                                <h5 class="mb-2 fw-semibold">Vehicle Tracking System</h5>
+                                <div class="mx-auto telematic-sec-card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="card bg-dark text-white position-relative"
+                            style="height: 200px; background-image: url('https://www.watsoo.com/img/fms/img2.png'); background-size: cover; background-position: center;">
+                            <div class="telematic-sec-card-overlay"></div>
+                            <div class="position-absolute bottom-0 w-100 text-center pb-3">
+                                <h5 class="mb-2 fw-semibold">Fuel Monitoring System</h5>
+                                <div class="mx-auto telematic-sec-card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="card bg-dark text-white position-relative"
+                            style="height: 200px; background-image: url('https://www.watsoo.com/img/load_sensor/img3.png'); background-size: cover; background-position: center;">
+                            <div class="telematic-sec-card-overlay"></div>
+                            <div class="position-absolute bottom-0 w-100 text-center pb-3">
+                                <h5 class="mb-2 fw-semibold">Weighbridge Automation</h5>
+                                <div class="mx-auto telematic-sec-card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="card bg-dark text-white position-relative"
+                            style="height: 200px; background-image: url('https://www.watsoo.com/img/gps_device/img3.png'); background-size: cover; background-position: center;">
+                            <div class="telematic-sec-card-overlay"></div>
+                            <div class="position-absolute bottom-0 w-100 text-center pb-3">
+                                <h5 class="mb-2 fw-semibold">Fleet Management System</h5>
+                                <div class="mx-auto telematic-sec-card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- IoT Manufacturing -->
+        <div class="row iot-manu-sec sec-padding-lr sec-padding-tb pb-0">
+            <!-- Left Side: Text Content -->
+            <div class="col-md-6 my-auto">
+                <h3 class="sub-heading iot-manu-sec-sub-heading">Th-House loT Manufacturing Unit</h3>
+                <h1 class="main-heading iot-manu-sec-main-heading mt-3">Empowering Innovation Through In- House
+                    R&D and loT Solutions</h1>
+                <div class="container py-4 pl-0">
+                    <div class="d-flex flex-wrap gap-3 align-items-center pl-0">
+                        <span class="badge custom-iot-manu-li rounded-pill">Tailored Solutions</span>
+                        <span class="badge custom-iot-manu-li rounded-pill">Ready-Made loT</span>
+                        <span class="badge custom-iot-manu-li rounded-pill">White Label IoT</span>
+                        <span class="badge custom-iot-manu-li rounded-pill">IoT R&D and Testing</span>
+                        <span class="badge custom-iot-manu-li rounded-pill">99.9% Uptime</span>
+                        <span class="badge custom-iot-manu-li rounded-pill">Minimal Maintenance Costs</span>
+                        <span class="badge custom-iot-manu-li rounded-pill">Compliant ioT</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Right Side: Image -->
+            <div class="col-md-6">
+                <img src="./IMG/robot-hand.png" class="img-fluid rounded" alt="Image 1">
+            </div>
+        </div>
+
+        <!--Lab Gallery -->
+        <div class="row lab-main-sec sec-padding-lr sec-padding-tb"
+            style="background-image: url('https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1800&dpr=1'); background-size: cover; background-position: center;">
+            <h3 class="sub-heading">Lab Gallery</h3>
+            <h1 class="main-heading">Our IoT Lab Facility</h1>
+            <p class="para-about-heading">In-house Unit for IoT Device R&D and Manufacturing</p>
+            <div class="container py-4">
+                <div class="row g-3">
+
+                    <!-- Image 1 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="img-container" style="height: 300px; width: 100%;">
+                            <img src="https://images.pexels.com/photos/3861974/pexels-photo-3861974.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                class="img-fluid rounded object-cover h-100" alt="Image 1">
+                        </div>
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="img-container" style="height: 300px; width: 100%;">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                class="img-fluid rounded object-cover object-center h-100" alt="Image 2">
+                        </div>
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="img-container" style="height: 300px; width: 100%;">
+                            <img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                class="img-fluid rounded object-cover object-center h-100" alt="Image 3">
+                        </div>
+                    </div>
+
+                    <!-- Image 4 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="img-container" style="height: 300px; width: 100%;">
+                            <img src="https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+                                class="img-fluid rounded object-cover object-center h-100" alt="Image 4">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact div -->
+        <div class="row contact-main-div sec-padding-lr sec-padding-tb" style="margin: 0;">
+            <div class="row">
+                <!-- Left Side: Text Content -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="sub-heading text-lg-start">Contact Us</h3>
+                    <h1 class="main-heading text-lg-start">Ready to Get Started?</h1>
+                    <h1 class="main-heading text-lg-start">Drop Us a Line</h1>
+
+                    <!-- Contact Info Section -->
+                    <div class="mt-4">
+                        <div class="row g-3">
+                            <!-- Address -->
+                            <div class="col-12 contact-form-bg-color py-3 px-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-container me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-geo-alt" style="font-size: 1.3rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-semibold mb-0">Address</h6>
+                                        <p class="mb-0" style="font-size: 14px;">Get Watsoo Express Plot 872,
+                                            Udyog Vihar, Phase 5. Sector 19, Gurugram, Haryana 122016</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sales Enquiry -->
+                            <div class="col-12 contact-form-bg-color py-3 px-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-container me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-telephone-outbound" style="font-size: 1.3rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Sales/VLTD Enquiry</h6>
+                                        <p class="mb-0" style="font-size: 14px;">Get +91 84488 35133, +91 90677
+                                            30407</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service and Support -->
+                            <div class="col-12 contact-form-bg-color py-3 px-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-container me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-person-raised-hand" style="font-size: 1.3rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Service and Support</h6>
+                                        <p class="mb-0" style="font-size: 14px;">Get +91 98105 45804, +91 98739
+                                            55903</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-12 contact-form-bg-color py-3 px-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-container me-3 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-envelope-arrow-up" style="font-size: 1.3rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Email us today</h6>
+                                        <p class="mb-0" style="font-size: 14px;">Get vita@watsoo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Image and Form -->
+                <div class="col-12 col-lg-6 p-4 rounded contact-form-bg-color">
+                    <h2 class="fw-bold text-center text-lg-start">Request A Quote</h2>
+                    <form class="p-3 bg-light rounded">
+                        <div class="row g-4">
+                            <!-- First Row -->
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control py-2 px-4" id="name" placeholder="Name" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="email" class="form-control py-2 px-4" id="email" placeholder="Email"
+                                    required>
+                            </div>
+
+                            <!-- Second Row -->
+                            <div class="col-12 col-md-6">
+                                <input type="tel" class="form-control py-2 px-4" id="phone" placeholder="Phone"
+                                    required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="number" class="form-control py-2 px-4" id="number" placeholder="Number"
+                                    required>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="col-12">
+                                <textarea class="form-control" id="inquiry" placeholder="Describe Your Inquiry" rows="6"
+                                    style="resize: none;" required></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-btn-header mt-4 text-center text-lg-start">
+                            <a href="#contact" class="btn btn-primary">
+                                <span>Submit Now</span>
+                                <i class="bi bi-arrow-up-right" style="margin-left: 4px;"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Certification Div -->
+        <div class="row certification-div sec-padding-lr">
+            <div class="certification-div-overlay">
+                <!-- Overlay Content if required -->
+            </div>
+            <div class="row align-items-center">
+                <!-- First Div (Text Section) -->
+                <div class="col-12 col-lg-7 mb-4 mb-lg-0">
+                    <h2 class="fw-bold text-center text-lg-start">
+                        Discover Our Customized <br> Business Solutions Certified By
+                    </h2>
+                    <p class="text-center text-lg-start">
+                        From optimizing supply chain management to enhancing data security, our tailored
+                        solutions address your
+                        most critical needs across different industries.
+                    </p>
+                </div>
+
+                <!-- Second Div (Buttons & Certification Images) -->
+                <div class="col-12 col-lg-5">
+                    <!-- Buttons Section -->
+                    <div class="d-flex flex-column flex-md-row justify-content-md-between mb-4 gap-3">
+                        <!-- First Button -->
+                        <button
+                            class="custom-btn custom-btn-1 rounded flex-grow-1 d-flex justify-content-center align-items-center">
+                            Request a Demo
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+
+                        <!-- Second Button -->
+                        <button
+                            class="custom-btn custom-btn-2 rounded flex-grow-1 d-flex justify-content-center align-items-center">
+                            Explore Solution
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Certification Images Section -->
+                    <div class="row row-cols-2 row-cols-md-4 g-3">
+                        <div class="col">
+                            <img src="https://nyggs.com/images/icat.webp" alt="Certification 1"
+                                class="img-fluid cer-img">
+                        </div>
+                        <div class="col">
+                            <img src="https://nyggs.com/images/iso.webp" alt="Certification 2"
+                                class="img-fluid cer-img">
+                        </div>
+                        <div class="col">
+                            <img src="https://nyggs.com/images/tuv.webp" alt="Certification 3"
+                                class="img-fluid cer-img">
+                        </div>
+                        <div class="col">
+                            <img src="https://nyggs.com/images/cmmi.webp" alt="Certification 4"
+                                class="img-fluid cer-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Industry Carousel -->
+        <div class="sec-padding-lr sec-padding-tb">
+            <div class="container">
+                <!-- Text Section -->
+                <div class=" mb-4">
+                    <h3 class="sub-heading">Industries</h3>
+                    <h1 class="main-heading">Industry we serve</h1>
+                    <p>Explore How We Transform Businesses Across Sectors.</p>
+                </div>
+
+                <!-- Carousel Section -->
+                <div class="container-fluid px-0">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First Image -->
+                            <div class="carousel-item active">
+                                <img src="https://www.watsoo.com/img/lOGISTICS.jpg"
+                                    class="d-block w-100 object-fit-cover" alt="First Image">
+                            </div>
+                            <!-- Second Image -->
+                            <div class="carousel-item">
+                                <img src="https://www.watsoo.com/img/OIL-GAS.jpg" class="d-block w-100 object-fit-cover"
+                                    alt="Second Image">
+                            </div>
+                            <!-- Third Image -->
+                            <div class="carousel-item">
+                                <img src="https://www.watsoo.com/img/Public%20Transport.jpg"
+                                    class="d-block w-100 object-fit-cover" alt="Third Image">
+                            </div>
+                            <!-- Fourth Image -->
+                            <div class="carousel-item">
+                                <img src="https://www.watsoo.com/img/Mining.jpg" class="d-block w-100 object-fit-cover"
+                                    alt="Fourth Image">
+                            </div>
+                            <!-- Fifth Image -->
+                            <div class="carousel-item">
+                                <img src="https://www.watsoo.com/img/Construction.jpg"
+                                    class="d-block w-100 object-fit-cover" alt="Fifth Image">
+                            </div>
+                            <!-- Sixth Image -->
+                            <div class="carousel-item">
+                                <img src="https://www.watsoo.com/img/Agriculture.jpg"
+                                    class="d-block w-100 object-fit-cover" alt="Sixth Image">
+                            </div>
+                        </div>
+
+                        <!-- Left Arrow -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <!-- Right Arrow -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Blog Section -->
+        <div class="sec-padding-lr sec-padding-tb">
+            <div class="w-full mb-4 mb-md-0">
+                <h1 class="main-heading text-center">Blog Section</h1>
+                <p class="text-center">Discover Key Trends and Innovations in the loT industry.</p>
+            </div>
+
+            <div class="container my-4">
+                <div class="blog-slider row flex-nowrap overflow-x-scroll" id="slider">
+                    <!-- First Container -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 position-relative">
+                            <!-- Card Image -->
+                            <img src="https://images.pexels.com/photos/1267324/pexels-photo-1267324.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="card-img-top" alt="Placeholder Image">
+
+                            <!-- Card Content -->
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-start">
+                                    Why are Load Sensors becoming an integral part of the Logistics Ecosystem?
+                                </h5>
+                                <p class="card-text text-muted text-start">
+                                    Do you know that 50% of all trucks in India risk travelling with excess cargo?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Container -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-start">How to Select a Perfect Vehicle Tracking System?</h5>
+                                <p class="card-text text-muted text-start">
+                                    There are a lot of Vehicle Tracking System (VTS) vendors in India.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Container -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-start">Top Logistical Issues in India and How to Overcome
+                                    Them</h5>
+                                <p class="card-text text-muted text-start">
+                                    The Indian logistics industry is booming but faces hurdles like high transportation
+                                    costs,
+                                    poor infrastructure, and inefficient inventory.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fourth Container -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="https://images.pexels.com/photos/1267324/pexels-photo-1267324.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="card-img-top" alt="Placeholder Image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-start">Importance of Automation in Logistics</h5>
+                                <p class="card-text text-muted text-start">
+                                    Automation improves operational efficiency and helps in reducing costs and errors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <button class="btn btn-primary" id="prevBtn"><i class="bi bi-chevron-left"></i></button>
+                    <button class="btn btn-primary" id="nextBtn"><i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="row newsletter-sec sec-padding-lr sec-padding-tb">
+            <div class="row align-items-center text-center text-md-start">
+                <!-- Text Section -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <p class="text-uppercase fw-bold mb-1">Join our newsletter</p>
+                    <h1 class="fw-bold fs-2 fs-md-1 fs-lg-display-3">Subscribe Newsletter</h1>
+
+                </div>
+                <!-- Input Section -->
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                    <div class="input-group">
+                        <input type="email" class="form-control py-2 py-md-3 px-3 px-md-4 text-white"
+                            placeholder="Enter your email address" aria-label="Email Address" required
+                            style="border-radius: 40px; border: 1px solid white; background-color: transparent; color: white !important;">
+                    </div>
+                </div>
+                <!-- Contact Button Section -->
+                <div class="col-12 col-md-3">
+                    <button
+                        class="btn btn-primary d-flex align-items-center px-4 px-md-5 py-2 py-md-3 justify-content-center w-100 w-md-auto"
+                        type="button">
+                        <span>Subscribe</span>
+                        <i class="bi bi-arrow-up-right ms-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explore Fintech TI Section -->
+        <div class="row">
+            <footer class="bg-dark text-white position-relative sec-padding-lr sec-padding-tb"
+                style="background-image: url('https://www.watsoo.com/img/construction/img6.jpg'); background-size: cover; background-position: center; z-index: -10;">
+                <div class="footer-overlaydiv"></div>
+
+                <div class="container p-4">
+                    <div class="row">
+                        <!-- Company Info -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <!-- Company Logo -->
+                            <div class="mb-3">
+                                <img src="./IMG//wastoologo.svg" alt="Company Logo" class="img-fluid"
+                                    style="max-width: 250px; width: 100%;" class="img-fluid w-100 w-xl-75 w-lg-50">
+                            </div>
+
+                            <!-- Company Description -->
+                            <p class="para-about-heading" style="color: white;">
+                                We manufacture various IoT devices like AIS-140, Basic tracking devices, Fuel
+                                Sensors, Digital Locks etc. Along with these devices we also provide end to end
+                                solution for various business needs.
+                            </p>
+                            <!-- Social Media Icons -->
+                            <div class="d-flex">
+                                <a href="#" class="me-3 text-white"><i class="bi bi-facebook fs-4"></i></a>
+                                <a href="#" class="me-3 text-white"><i class="bi bi-twitter fs-4"></i></a>
+                                <a href="#" class="me-3 text-white"><i class="bi bi-instagram fs-4"></i></a>
+                                <a href="#" class="me-3 text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                                <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <div>
+                                <div class="row">
+                                    <!-- First Part: Nav Links -->
+                                    <div class="col-6 mb-3">
+                                        <h5 class="fw-bold">Solutions</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">Telematics</a>
+                                            </li>
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">Finance</a>
+                                            </li>
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">Business</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Second Part: Quick Links -->
+                                    <div class="col-6 mb-3">
+                                        <h5 class="fw-bold">IoT Devices</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">AIS 140</a>
+                                            </li>
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">Fuel Sensors</a>
+                                            </li>
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">GPS Devices</a>
+                                            </li>
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">Digital Lock</a>
+                                            </li>
+                                            <li class="d-flex gap-2 mb-2">
+                                                <i class="bi bi-chevron-double-right"></i>
+                                                <a href="#" class="text-white nav-links-li">Load Sensors</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="col-12 col-md-4">
+                            <h5 class="fw-bold">Contact Us</h5>
+                            <div class="container mt-4">
+                                <div class="row">
+                                    <!-- Container 1 -->
+                                    <div class="col-12 mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-container me-3">
+                                                <i class="bi bi-geo-alt" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <div>
+                                                <p style="font-size: 14px; margin-bottom: 0;">Watsoo Express Plot
+                                                    872, Udyog Vihar, Phase 5, Sector 19, Gurugram, Haryana 122016
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container 2 -->
+                                    <div class="col-12 mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-container me-3">
+                                                <i class="bi bi-envelope-arrow-down" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <div>
+                                                <p style="font-size: 14px; margin-bottom: 0;">vitd@watsoo.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container 3 -->
+                                    <div class="col-12 mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-container me-3">
+                                                <i class="bi bi-telephone-outbound" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 style="font-size: 16px;margin-bottom: 0;">Sales/VLTD enquiry:
+                                                </h6>
+                                                <p style="font-size: 14px; margin-bottom: 0;">+91 84488 35133 <br>
+                                                    +91 96677 36407</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container 4 -->
+                                    <div class="col-12 mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-container me-3">
+                                                <i class="bi bi-person-raised-hand" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 style="font-size: 16px;margin-bottom: 0;">Service and Support:
+                                                </h6>
+                                                <p style="font-size: 14px; margin-bottom: 0;">+91 98105 45864 <br>
+                                                    +9198739 55903</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="text-center mt-3 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                        <!-- First Section: Copyright Information -->
+                        <div>
+                            <small>&copy; Copyright 2024 Watsoo Express | All Rights Reserved</small>
+                        </div>
+
+                        <!-- Second Section: Quick Links -->
+                        <div class="d-flex justify-content-center mt-3 mt-lg-0">
+                            <ul class="list-unstyled d-flex mb-0 flex-wrap justify-content-center">
+                                <li><a href="#" class="text-white small footer-last-nav-link"
+                                        style="text-decoration: none;">Privacy Policy</a></li>
+                                <li><a href="#" class="text-white small footer-last-nav-link"
+                                        style="text-decoration: none;">Terms & Conditions</a></li>
+                                <li><a href="#" class="text-white small footer-last-nav-link"
+                                        style="text-decoration: none;">Copyright Policy</a></li>
+                                <li><a href="#" class="text-white small footer-last-nav-link"
+                                        style="text-decoration: none;">Disclaimer</a></li>
+                                <li><a href="#" class="text-white small footer-last-nav-link"
+                                        style="text-decoration: none;">Legal Notice</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </div>
+    <script src="script.js"></script>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
